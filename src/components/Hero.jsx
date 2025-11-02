@@ -29,7 +29,7 @@ function SelectionModal({ open, onClose }) {
           </div>
           <div>
             <h3 className="text-lg font-semibold text-gray-900">Select a preference</h3>
-            <p className="text-sm text-gray-600">You’ll be redirected to Calendly to book your consultation.</p>
+            <p className="text-sm text-gray-600">You’ll be redirected to Calendly to book your session.</p>
           </div>
         </div>
 
@@ -48,7 +48,7 @@ function SelectionModal({ open, onClose }) {
         </div>
 
         <p className="mt-4 text-xs text-gray-500">
-          Note: This is a temporary scheduling system. We’re building a secure, integrated booking experience.
+          Note: Internal booking system coming soon.
         </p>
 
         <button onClick={onClose} className="mt-4 w-full rounded-xl border border-gray-200 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
@@ -63,7 +63,7 @@ export default function Hero() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="relative overflow-hidden">
+    <section id="start" className="relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none" aria-hidden>
         <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-teal-100 blur-3xl opacity-60" />
         <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-sky-100 blur-3xl opacity-60" />
@@ -75,10 +75,11 @@ export default function Hero() {
             <Shield className="h-3.5 w-3.5" /> HIPAA-compliant & encrypted
           </p>
           <h1 className="mt-5 text-4xl sm:text-5xl font-semibold tracking-tight text-gray-900">
-            Professional Online Therapy, Simplified.
+            Your Mental Health, Your Space.
           </h1>
-          <p className="mt-4 text-gray-600 leading-relaxed max-w-prose">
-            Connect with licensed therapists from the comfort of your home. GetEHealth offers video, audio, and text-based sessions with certified professionals, designed around privacy and ease.
+          <p className="mt-4 text-lg text-gray-700">Connect with certified therapists — privately, safely, and on your terms.</p>
+          <p className="mt-3 text-gray-600 leading-relaxed max-w-prose">
+            GetEHealth provides accessible, judgment-free online therapy sessions for individuals of all backgrounds and age groups.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
